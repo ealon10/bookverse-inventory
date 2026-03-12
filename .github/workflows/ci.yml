@@ -595,6 +595,7 @@ jobs:
       id-token: write
 
     env:
+      JF_RELEASE_BUNDLE_REPO: "release-bundles-v2"
       BUILD_NAME: "bookverse-inventory_CI_create-promote"
       BUILD_NUMBER: ${{ needs.build-test-publish.outputs.build_number }}
       SERVICE_NAME: "inventory"
